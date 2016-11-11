@@ -1,13 +1,16 @@
 # util-listenForEnd
 
 ## usage
-1. Include util in your project 
-
-import { listenForAnimationEnd, listenForTransitionEnd } from 'path/to/util';
-
-2. use listenForAnimationEnd / listenForTransitionEnd. 
+- Include util in your project 
+- Use listenForAnimationEnd / listenForTransitionEnd 
 
 Ex:
-listenForAnimationEnd(targetElement, function() {
+```
+import { listenForAnimationEnd } from 'path/to/util';
+
+...
+var el = document.querySelectorAll('.element-with-animation');
+listenForAnimationEnd(el, function() {
     // do stuff;
 });
+```
